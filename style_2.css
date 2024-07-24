@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	background-color: antiquewhite;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* header */
+header {
+	padding: 30px 4% 10px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.name-header23{
+	margin: 0; padding: 0;
+	font-size: 20px;
+}
+
+.header-menu-list{
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+
+li{
+	margin: 0 0 0 15px;
+	font-size: 14px;
+}
+
+nav{
+	margin: 0 0 0 auto;
+}
+
+/* main visual */
+
+.main-visual{
+	position: relative;
+}
+
+.main-visual-text{
+	position: absolute;
+	left: 60px;
+	top: 80%;
+	transform: translateY(-50%);
+ /*-------------------------------------------
+  元々のコード
+ 	position: absolute;
+	left: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+  -------------------------------------------*/
+}
+
+.main-visual-text h2{
+	font-weight: bold;
+	border-left: 10px solid;
+	color:blue;
+	font-size: 36px;
+	padding: 5px;
+}
+.main-visual-img img{
+	width: 100%;
+	max-width: 100%; 	
+}
+
+/* content */
+/* profile */
+
+.wrapper{
+    max-width: 960px;
+    margin: auto auto auto auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+	margin-top: 10px;
+	height: auto;
+}
+
+.main-title{
+	font-size: 20px;
+	line-height: 1;
+}
+.main-title span{
+	display: block;
+	font-size: 9px;
+	margin-bottom: 10px;
+	color:blue;
+}
+
+.main-title span::before{
+	content: '';
+	width: 10px;
+	height: 1px;
+	display: inline-block; /* display: block から inline-block へ変更 */
+	background-color: blue; /* color ではなく background-color を使用 */
+	margin-right: 1em;
+	vertical-align: middle; /* 水平方向に中央揃え */
+}
+
+.profile-text span{
+	color: #c30;
+}
+
+
+  /*-------------------------------------------
+  biography
+  -------------------------------------------*/
+#biography ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+#biography li {
+    width: 31%;
+    margin-bottom: 23px;
+	background-color: #fff;
+	box-shadow: 4px 4px;
+}
+
+.biography-photo p{
+	margin: 5px 5px 5px 5px;
+}
+
+img {
+	margin: auto;
+	display: block;
+}
+
+
+
+/* achievment */
+
+#achievment ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+#achievment li {
+    width: 30%;
+    margin-bottom: 23px;
+	background-color: #fff;
+	box-shadow: 4px 4px;
+}
+
+.achievment-photo p{
+	margin: 5px 5px 5px 5px;
+}
+
+img {
+	margin: auto;
+	display: block;
+}
+
+/* footer */
+footer{
+	background-color: black;
+	color: #fff;
+	top: 0;
+	width: 100%;
+	position: sticky;
+}
+
+.footer-menu{
+	margin: 0px 10px 0px 10px;
+}
+
+.footer-menu-list{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+	text-align: right;
+	margin: 0px 10px 0px 10px;
+}
+
+.footer-menu-list li{
+	text-align: right;
+}
+
+.copyright p{
+	text-align: center;
+}
